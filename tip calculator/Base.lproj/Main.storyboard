@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sPk-RR-xf9">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tip Calculator-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tip_calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" background="pencil" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Fcl-rY-j6W">
+                                <rect key="frame" x="286" y="122" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
+                                <connections>
+                                    <action selector="calculatetip:" destination="BYZ-38-t0r" eventType="editingChanged" id="7Y5-yd-Clx"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bill Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfJ-il-hzF">
+                                <rect key="frame" x="31" y="122" width="141" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="shadowColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8R-cW-mso">
+                                <rect key="frame" x="31" y="200" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFh-pN-193">
+                                <rect key="frame" x="31" y="396" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6aZ-Rc-UTm">
+                                <rect key="frame" x="253" y="396" width="141" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doQ-N8-5vm">
+                                <rect key="frame" x="286" y="200" width="97" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BTo-J2-bHG">
+                                <rect key="frame" x="31" y="282" width="352" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="P8Y-MS-jtx">
+                                <rect key="frame" x="31" y="321" width="345" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="15%"/>
+                                    <segment title="18%"/>
+                                    <segment title="20%"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="calculatetip:" destination="BYZ-38-t0r" eventType="valueChanged" id="Z8C-Mh-mMm"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Split" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Tj-u7-Row">
+                                <rect key="frame" x="175" y="462" width="64" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pim-58-NiU">
+                                <rect key="frame" x="286" y="499" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="calculatetip:" destination="BYZ-38-t0r" eventType="editingChanged" id="fqj-q4-3v7"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qA4-ZG-XLl">
+                                <rect key="frame" x="133" y="628" width="127" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Persons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="299-Hb-x2d">
+                                <rect key="frame" x="31" y="506" width="95" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Each Pay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ef6-y7-zh5">
+                                <rect key="frame" x="133" y="580" width="127" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="LJe-xY-lVY" appends="YES" id="lz5-DY-ya7"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tip Calculator" id="TdS-WM-tc0"/>
+                    <connections>
+                        <outlet property="billField" destination="Fcl-rY-j6W" id="FSQ-g6-0uc"/>
+                        <outlet property="eachPay" destination="qA4-ZG-XLl" id="O8P-NO-Aa3"/>
+                        <outlet property="tipControl" destination="P8Y-MS-jtx" id="lwd-Id-8MN"/>
+                        <outlet property="tipLabel" destination="doQ-N8-5vm" id="ZDQ-6m-gET"/>
+                        <outlet property="totalLabel" destination="6aZ-Rc-UTm" id="Nvu-Rd-2xm"/>
+                        <outlet property="totalPerson" destination="pim-58-NiU" id="MVU-Hq-com"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="LJe-xY-lVY">
+                    <connections>
+                        <action selector="ontap:" destination="BYZ-38-t0r" id="tje-fb-V3Q"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="109.82142857142857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Gzs-Di-1u7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sPk-RR-xf9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4nn-Gz-li7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1bX-nl-7Nk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aNE-aR-fa5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+    </resources>
+</document>
